@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+</head>
+
+<body>
+    <div>
+    <label id="lblProductName" for="txtProductName">Product Name:</label><span style="color: red;">*</span>
+    <input type="text" id="txtProductName" placeholder="Enter product name" /><br>
+    </div>
+    <label id="lblProductPrice" for="txtProductPrice">Product Price:</label>
+    <input type="number" min="0" max="1000" id="txtProductPrice" placeholder="Enter product price" /><br>
+    <label id="lblCategory" for="ddlCategory"> Category</label>
+    <select id="ddlCategory">
+        <option value="Men">Men</option>
+        <option value="Female">Female</option>
+        <option value="Kids">Kids</option>
+    </select><br>
+    <label id="lblAgeGroup" for="ddlAgeGroup"> Age Group</label>
+    <select id="ddlAgeGroup">
+        <option value="0-3">0-3 Years</option>
+        <option value="4-7">4-7 Years</option>
+        <option value="8-12">8-12 Years</option>
+
+    </select><br>
+    <label id="lblUploadImage" for="fileUpload">Upload Image:</label>
+
+    <input type="file" id="fileUpload" accept="image/*" />
+    <img id="imgPreview" src="#" alt="Image Preview" style="display: none; width: 200px; height: auto;" /><br>
+    <button id="btnAddProduct">Add Product</button>
+
+
+        
+</body>
+
+
+</html>
